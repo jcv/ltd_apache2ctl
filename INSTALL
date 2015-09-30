@@ -1,0 +1,4 @@
+To compile and install this utility, issue the following commands:
+
+make
+sudo make install
