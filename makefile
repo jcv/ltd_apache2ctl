@@ -1,5 +1,5 @@
 # Set this variable to the name of the group that is allowed to restart apache.
-webadmingroup = webadmin
+webadmingroup = deployers
 
 all: ltd_apache2ctl
 
