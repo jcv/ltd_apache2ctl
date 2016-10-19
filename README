@@ -1,7 +1,7 @@
-This utility allows non-super users to restart apache2 if they belong to a web administration group. This is accomplished by by the makefile setting ownerships and suid bit during installation. I hear this functionality is also possible using visudo, which is a more general solution, but I have not tested or explored that yet. The shortcomings to that approach is less control and limitations on what functionality is available to users as well as less error checking ability. See http://serverfault.com/questions/69847/linux-how-to-give-a-user-permission-to-restart-apache
+This utility allows non-super users to restart apache2 if they belong to the deployers group. This is accomplished by by the makefile setting ownerships and suid bit during installation.
 
 The utility also allows authorized users to check the syntax of apache configuration files using apache2ctl configtest. This test is also ran before restarting apache, and the utility will refuse to restart apache if any configuration files have syntax errors. This avoids the default apache restart behavior that shuts apache down before checking config files and is unable to restart apache if any config file has an error.
 
-You can change the name of the administration group by editing the make file.
+You can change the name of the deployers group by editing the make file.
 
 This utility is available under Gnu GPL version 3. See the LICENSE file for a copy of the license.
